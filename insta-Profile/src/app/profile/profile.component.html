@@ -1,12 +1,21 @@
+<div class="stories d-flex">
+  <div *ngFor="let post of posts" class="text-center">
+    <button class="btn">
+      <img id="stories" src="{{post.imgprofile}}" alt="a">
+      <p>{{post.name}}</p>
+    </button>
+  </div>
+</div>
+
 <div *ngFor="let post of posts">
   <div class="card border mb-5">
 
     <!-- header nav -->
-    <div class="card-header bg-transparent  d-flex flex-row justify-content-between">
-      <div class="d-flex flex-row " id="navcontent1">
+    <div class="card-header bg-transparent  d-flex flex-row justify-content-between pt-4 pl-4">
+      <button class="btn d-flex flex-row " id="navcontent1" routerLink="profile" (click)="click()">
         <img class="upnavimg1" src="{{post.imgprofile}}" />
-        <p><b>{{post.name}}</b></p>
-      </div>
+        <p class="pl-4 pt-2"><b>{{post.name}}</b></p>
+      </button>
       <div class="dropdown">
         <div role="button" data-toggle="dropdown">
           <img class="upnavimg2 pl-4"
@@ -66,7 +75,8 @@
       <div id="time">
         <p>2 days ago</p>
       </div>
-      <input type="text" name="" id="" class="w-100 mt-2 text-monospace border-0" placeholder="Enter comments here .....">
+      <input type="text" name="" id="" class="w-100 mt-2 text-monospace border-0"
+        placeholder="Enter comments here .....">
     </div>
 
   </div>

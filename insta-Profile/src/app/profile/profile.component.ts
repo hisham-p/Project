@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -9,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProfileComponent implements OnInit {
   posts: any;
   url: string = 'http://localhost:3000';
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient , private router :Router) {
   }
   ngOnInit() {
     this.http.get(this.url)
@@ -17,6 +18,9 @@ export class ProfileComponent implements OnInit {
         this.posts = response;
         console.log(response);
       });
+  }
+  click(){
+    this.router.navigate(['/profile']);
   }
 
 }

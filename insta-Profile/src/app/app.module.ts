@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StoriesComponent } from './stories/stories.component';
 import { InstapostComponent } from './instapost/instapost.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -17,7 +16,6 @@ import { MessageComponent } from './message/message.component';
 @NgModule({
   declarations: [
     AppComponent,
-    StoriesComponent,
     InstapostComponent,
     ProfileComponent,
     NavbarComponent,
