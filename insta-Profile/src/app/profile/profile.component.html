@@ -8,11 +8,11 @@
 </div>
 
 <div *ngFor="let post of posts">
-  <div class="card border mb-5">
+  <div class="card">
 
     <!-- header nav -->
     <div class="card-header bg-transparent  d-flex flex-row justify-content-between pt-4 pl-4">
-      <button class="btn d-flex flex-row " id="navcontent1" routerLink="profile" (click)="click()">
+      <button class="btn d-flex flex-row " id="navcontent1" [routerLink]="['profile/' + post.name]">
         <img class="upnavimg1" src="{{post.imgprofile}}" />
         <p class="pl-4 pt-2"><b>{{post.name}}</b></p>
       </button>

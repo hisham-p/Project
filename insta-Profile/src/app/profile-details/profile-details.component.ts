@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ServiceService } from '../services/service.service';
+import { ActivatedRoute } from '@angular/router';
+// import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-profile-details',
@@ -7,10 +10,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./profile-details.component.css']
 })
 export class ProfileDetailsComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  posts : any;
+  proname : any;
+  constructor(
+    private service : ServiceService,
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.proname = params.name;
+      // console.log(params)
+    });
+    this.service.getPosts()
+    .subscribe(response=>{
+      this.posts = response;
+    });
+    
   }
 
 }
