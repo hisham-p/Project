@@ -24,8 +24,9 @@ db.on('error', err => {
 //setting up schema
 let Schema = new mongoose.Schema({
     id: Number,
-    name: String
-
+    name: String,
+    imgprofile : String,
+    imgpost : String
 });
 
 

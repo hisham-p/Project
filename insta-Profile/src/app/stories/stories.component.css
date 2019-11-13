@@ -1,7 +1,9 @@
 img{
     display: inline-block;
-    width: 100px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .stories::-webkit-scrollbar{
     overflow-x: scroll;

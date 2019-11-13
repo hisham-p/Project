@@ -2,10 +2,18 @@
   width: 175px;
 }
 
-.upnavimg1,
+
 .upnavimg2 {
   width: 50px;
   height: 20px;
+}
+
+.upnavimg1 {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+
 }
 
 .downnavimg1,
@@ -14,6 +22,7 @@
 .downnavimg4 {
   width: 50px;
   height: 30px;
+
 }
 
 .dropdown-toggle {
@@ -28,4 +37,34 @@
 .card-header,
 .card-footer {
   border: none;
+}
+
+.imgmain {
+  height: 100%;
+  width: 100%;
+}
+
+#views {}
+
+#profilename {}
+
+#posttags {}
+
+#commentcount {
+  font-size: 14px;
+}
+
+#time {
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+.dropdown-menu{
+  transform: translate3d(-109px, 24px, 0px);
 }
