@@ -1,3 +1,28 @@
+.instanav {
+  background-color: white;
+}
+
+#section1 li {
+  list-style-type: none;
+}
+
+#section2 li{
+    list-style-type: none;
+}
+li img {
+    width: 36px;
+    height: 53px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+#instagram{
+  font-size: 20px;
+}
+
+
+
 #navcontent1 {
   width: 175px;
 }

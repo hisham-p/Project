@@ -17,9 +17,22 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
 }
-.edit{
+.back{
+  width: 36px;
+    height: 53px;
+    object-fit: cover;
+}
+.menu{
+  width: 36px;
+    height: 53px;
+    object-fit: fill;
+}
+.follow{
     width : 235px;
     height: 30px;
+}
+.action{
+  height: 30px;
 }
 .profile::after {
   content: "";
