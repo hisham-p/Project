@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../services/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-message',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  constructor() { }
-
+  posts: any;
+  constructor(private service : ServiceService , private router :Router) {
+  }
   ngOnInit() {
+    this.service.getPosts()
+    .subscribe(response => {
+      this.posts = response;
+      // console.log(response);
+    });
+    
   }
 
 }

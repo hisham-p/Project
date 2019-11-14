@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InstapostComponent } from './instapost/instapost.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { AngularSvgIconModule } from 'angular-svg-icon';
@@ -15,7 +14,6 @@ import { MessageComponent } from './message/message.component';
 @NgModule({
   declarations: [
     AppComponent,
-    InstapostComponent,
     ProfileComponent,
     ProfileDetailsComponent,
     MessageComponent,

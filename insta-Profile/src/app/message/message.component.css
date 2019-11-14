@@ -1,0 +1,38 @@
+.dm {}
+
+#proimg {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#camera {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+h5 {
+  font-weight: 200px;
+  font-size: 18px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.back {
+  width: 36px;
+  height: 53px;
+  object-fit: cover;
+}
+
+.add {
+  height: 33px;
+}
